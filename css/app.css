@@ -1,0 +1,139 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    background: #000;
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0a0a0a;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+#pointcloud {
+    background-color: #111;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 150%;
+    -webkit-transition: all 2s;
+    transition: all 2s
+}
+
+@media screen and (max-width:39.99875em) {
+    #pointcloud canvas {
+        opacity: .6
+    }
+}
+
+@-moz-document url-prefix() {
+    #pointcloud {
+        max-width: 1300px;
+        left: auto;
+        right: 0
+    }
+
+    #pointcloud:before {
+        content: "";
+        position: fixed;
+        background-color: #111;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: -2
+    }
+}
+
+.feature {
+    position: relative;
+    z-index: 999;
+    background-color: #111;
+    background-color: #1a0000;
+    background-color: #fff;
+    background-color: transparent;
+    color: #fff;
+    background-size: cover;
+    padding-left: 2em;
+    padding-right: 2em
+}
+
+.feature .row {
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+}
+
+.feature .column,
+.feature .columns {
+    max-width: 40em
+}
+
+@media screen and (min-width:64em) {
+    .feature {
+        padding-left: 10em
+    }
+}
+
+.feature:nth-child(even) {
+    background-color: #333;
+    background-color: #000;
+    background-color: #fff;
+    background-color: transparent
+}
+
+.feature h2{
+    font-size: 3vw;
+	text-transform: uppercase
+}
+.feature h2 small {
+	font-size:0.6em;
+	color:#ababab;
+	display:block
+}
+.feature a,
+.feature h2,
+.feature p {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    transition: all 1s
+}
+
+.feature.in-viewport a,
+.feature.in-viewport h2,
+.feature.in-viewport p {
+    opacity: 1
+}
+
+section:not(.feature) {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #fff
+}
+
+@media screen and (min-width:64em) {
+    section:not(.feature) {
+        padding-left: 20em
+    }
+}
+
+@media screen and (min-width:64em) {
+    section:not(.feature) {
+        padding-left: 10em
+    }
+}

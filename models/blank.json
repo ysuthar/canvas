@@ -1,0 +1,20 @@
+{
+  "vertices":[0,1],
+  "metadata":{
+    "generator":"io_three",
+    "vertices":11648,
+    "type":"Geometry",
+    "version":3
+  },
+  "scale" : 1,
+  "materials" : [],
+	"morphTargets" : [],
+  "normals" : [],
+  "colors" : [],
+  "uvs" : [],
+  "faces" : [],
+  "bones" : [],
+  "skinIndices" : [],
+  "skinWeights" : [],
+  "animations" : []
+}
