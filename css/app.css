@@ -96,7 +96,7 @@ h1 {
 }
 
 .feature h2{
-    font-size: 3vw;
+    font-size: 2.5em;
 	text-transform: uppercase
 }
 .feature h2 small {
@@ -136,4 +136,7 @@ section:not(.feature) {
     section:not(.feature) {
         padding-left: 10em
     }
+	.feature h2{
+		font-size: 4.5vw
+	}
 }
